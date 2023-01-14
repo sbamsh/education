@@ -92,3 +92,42 @@ img{
     display: none;
     box-shadow: 0 10px 12px -7px rgba(0, 0, 0, 0.3);
 }
+
+.nav-item{
+    margin: 2rem 0;
+}
+
+.nav-link{
+    display: inline-block;
+    letter-spacing: 0.5px;
+    font-family: var(--nunito-font);
+    transition: var(--transition);
+}
+
+.nav-link:hover{
+    transform: translateX(12px);
+}
+
+.header-banner-wrapper{
+    flex: 1;
+    overflow: hidden;
+}
+
+.header-banner{
+    height: 100vh;
+    display: flex!important;
+}
+
+.header-banner h1{
+    font-size: 3.6rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.header-banner .btn{
+    margin-top: 5.6rem;
+}
+
+.header-banner .banner-one{
+    background: var(--gradient),url(../images/banner_bg_1.jpg) center/cover no-repeat;
+}
