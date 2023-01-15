@@ -128,6 +128,126 @@ img{
     margin-top: 5.6rem;
 }
 
-.header-banner .banner-one{
-    background: var(--gradient),url(../images/banner_bg_1.jpg) center/cover no-repeat;
+.header-banner.banner-one{
+    background: var(--gradient), url(../images/banner_bg_1.jpg) center/cover no-repeat;
+}
+
+.header-banner.banner-two{
+    background: var(--gradient), url(../images/banner_bg_2.jpg) center/cover no-repeat;
+}
+
+.header-banner.banner-three{
+    background: var(--gradient), url(../images/banner_bg_3.jpg) center/cover no-repeat;
+}
+
+.header-banner.banner-four{
+    background: var(--gradient), url(../images/banner_bg_4.jpg) center/cover no-repeat;
+}
+
+.header-banner .container{
+    max-width:248px;
+}
+
+.change-on-scroll.navbar{
+    padding:2rem 0;
+    box-shadow: 0 10px 12px -7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 10px 12px -7px rgba(0, 0, 0, 0.3);
+}
+
+.change-on-scroll{
+    background-color: var(--light-color);
+}
+
+.change-on-scroll .navbar-brand span{
+    color: var(--green-color);
+}
+
+.change-on-scroll .navbar-toggler-btn{
+    color: var(--dark-color);
+}
+
+/* slick dots */
+
+.slick-dots{
+    bottom: 50px;
+}
+
+.slick-dots li{
+    margin: 0 0.84rem!important;
+}
+
+.slick-dots li button::before{
+    width: 16px;
+    height: 16px;
+    border: 3px solid white;
+    border-radius: 50%;
+    color: transparent;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button::before{
+   color: var(--green-color);
+   background-color: var(--green-color);
+   border-color: var(--green-color);
+   opacity: 1;
+}
+
+
+
+
+
+/* media queries */
+
+@media(min-width: 450px){
+    .navbar-brand span, .footer-logo span{
+        font-size: 2.4rem!important;
+        margin-left: 4rem;
+    }
+    .header-banner h1{
+        font-size: 7.2rem;
+    }
+    .header-banner .lead{
+        font-size: 2.4rem;
+    }
+    .header-banner .container{
+        max-width: 100%;
+    }
+}
+
+@media(min-width: 992px){
+    .navbar{
+        padding: 4.6rem 0;
+    }
+    .navbar-toggler-btn{
+        display: none;
+    }
+    .navbar-collapse{
+        position: relative;
+        display: block!important;
+        background-color: transparent!important;
+        box-shadow: none;
+        padding: 0;
+    }
+    .navbar-nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-item{
+        margin: 0 0 0 4rem;
+    }
+    .nav-link{
+        font-weight: 500;
+    }
+    .nav-link:hover{
+        color: var(--green-color);
+        transform: none;
+    }
+    .change-on-scroll .nav-link{
+        color: var(--dark-color);
+        opacity: 0.9;
+        font-weight: 600;
+    }
+    .change-on-scroll .nav-link:hover{
+        color: var(--green-color);
+    }
 }
